@@ -43,11 +43,16 @@ Kenn
 */
 
 //Exercise 2 Solution//
+ /*function printArrayElements(myArray){
+     for (let i=0; i<myArray.length; i++){
+         console.log(myArray[i]);
+     }
 
-/*let nameArray =['Takeallah', 'Roxanne', 'Devere', 'Jazz'];
-function printArrayName(nameArray);
+     
+ }
+ let nameArray = ['Takeallah', 'Devere', 'Roxanne', 'Hendrix']
 
-console.log (printArrayName);
+ printArrayElements(nameArray);
 
 */
 
@@ -59,20 +64,12 @@ until they enter q or Q
 
 //Exercise 3 Solution//
 
-function enteraQ (userName10){
-    alert(`${teacherName} is a teacher`);
-}
-function alertStudentName(studentName){
-    alert(`${studentName} is a student`);
-}
-function enterKevin (userName1){
-    alert(`${userName1} is a cool dude`);
-}
-let userName1 = prompt("Enter your name!");
-if(userName1 == "q" || userName1 == "Q" ||){
-    alertTeacherName(userName1);
-} else if(userName1 == "Kevin" ||){
-    alertDirector(userName1);
-} else{
-    alertStudentName(userName1);
+function keepEnteringNames(){
+    let userEnteredName;
+    while(userEnteredName != "q" && userEnteredName != "Q"){
+        userEnteredName = prompt("Enter a name\nEnter q to quit")
+        if(userEnteredName == "Kevin"){
+            kevinIsCool();
+        }
+    }
 }
