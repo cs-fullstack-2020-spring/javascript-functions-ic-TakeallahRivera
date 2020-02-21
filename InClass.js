@@ -65,7 +65,7 @@ until they enter q or Q
 //Exercise 3 Solution//
 
 function keepEnteringNames(){
-    let userEnteredName;
+    let userEnteredName = "";
     while(userEnteredName != "q" && userEnteredName != "Q"){
         userEnteredName = prompt("Enter a name\nEnter q to quit")
         if(userEnteredName == "Kevin"){
@@ -73,3 +73,9 @@ function keepEnteringNames(){
         }
     }
 }
+
+function kevinIsCool(){
+    alert("Cool Dude");
+
+}
+keepEnteringNames();
