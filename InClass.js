@@ -59,3 +59,20 @@ until they enter q or Q
 
 //Exercise 3 Solution//
 
+function enteraQ (userName10){
+    alert(`${teacherName} is a teacher`);
+}
+function alertStudentName(studentName){
+    alert(`${studentName} is a student`);
+}
+function enterKevin (userName1){
+    alert(`${userName1} is a cool dude`);
+}
+let userName1 = prompt("Enter your name!");
+if(userName1 == "q" || userName1 == "Q" ||){
+    alertTeacherName(userName1);
+} else if(userName1 == "Kevin" ||){
+    alertDirector(userName1);
+} else{
+    alertStudentName(userName1);
+}
